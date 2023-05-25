@@ -1,0 +1,55 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+.container header{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 40px;
+    border-bottom: 1px solid #000;
+}
+
+.container header .navegacao{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 60px;
+}
+
+.container header .navegacao nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.container header .navegacao nav p{
+    padding-top: 10px;
+    padding-bottom: 40px;
+    border-bottom: 4px solid hsl(26, 100%, 55%);
+}
+
+.container header .navi-perfil{
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: flex-end; */
+    /* gap: 20px; */
+    /* background-color: red; */
+}
+
+.container header .navi-perfil button{
+    background-color: #fff;
+    /* border-radius: 60px; */
+    border: 0;
+
+}
+.container header .navi-perfil button .avatar{
+    width: 30px;
+    height: 30px;
+}
