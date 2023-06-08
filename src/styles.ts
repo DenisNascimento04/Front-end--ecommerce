@@ -16,7 +16,7 @@ export const Container = styled.div`
         border-bottom: 1px solid var(--grayishBlue);
     };
 
-    @media only screen and (max-width:375px){
+    @media only screen and (max-width:425px){
         align-items: flex-start;
         header{
             align-items: center;
@@ -64,7 +64,7 @@ export const Navegacao = styled.div`
         color: var(--veryDarkBlue);
     };
 
-    @media only screen and (max-width:375px){
+    @media only screen and (max-width:425px){
         align-items: center;
         justify-content: center;
         gap: 10px;
@@ -154,7 +154,7 @@ export const NavPerfil = styled.div`
         border-radius: 50px;
     }
 
-    @media only screen and (max-width:375px){
+    @media only screen and (max-width:425px){
         align-items: center;
         .notifi-carinho{
             top: -5px;
@@ -185,7 +185,7 @@ export const Conteudo = styled.main`
     flex: 2;
     gap: 40px;
 
-    @media only screen and (max-width:375px){
+    @media only screen and (max-width:425px){
         width: 100%;
         flex-direction: column;
         align-items: flex-start;
@@ -298,7 +298,7 @@ export const DadosProduto = styled.section`
         background-color: var(--orange);
     }
 
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 425px) {
         gap: 20px;
 
         p.desc{
@@ -377,7 +377,7 @@ export const Slide = styled.aside`
         opacity: .5;
     }
 
-    @media only screen and (max-width:375px){
+    @media only screen and (max-width:425px){
         padding: 0px;
         img{
             width: 100%;
@@ -529,7 +529,7 @@ export const Carinho = styled.div`
         font-weight: 700;
         color: var(--veryDarkBlue);
     }
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 425px) {
         width: 320px;
         z-index: 999999;
 
