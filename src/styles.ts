@@ -12,8 +12,11 @@ export const Container = styled.div`
         display: flex;
         justify-content: space-between;
         width: 80%;
-        margin-top: 40px;
+        margin-top: 4rem;
+        align-items: center;
+        padding-bottom: 1rem;
         border-bottom: 1px solid var(--grayishBlue);
+        /* background-color: blue; */
     };
 
     @media only screen and (max-width:425px){
@@ -32,9 +35,9 @@ export const Container = styled.div`
 
 export const Navegacao = styled.div`
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
     gap: 60px;
+    height: 3rem;
+    /* background-color: red; */
 
     nav .close{
         display: none;
@@ -52,15 +55,16 @@ export const Navegacao = styled.div`
     }
 
     nav p{
-        padding-top: 10px;
-        padding-bottom: 40px;
+        /* padding-top: 10px; */
+        /* padding-bottom: 40px; */
+        font-size: 1.6rem;
         transition: .1s;
         cursor: pointer;
         color: var(--darkGrayishBlue);
     };
 
     nav p:hover{
-        border-bottom: 4px solid var(--orange);
+        border-bottom: 2px solid var(--orange);
         color: var(--veryDarkBlue);
     };
 
@@ -70,7 +74,7 @@ export const Navegacao = styled.div`
         gap: 10px;
         nav{
             position: fixed;
-            z-index: 999999;
+            z-index: 999;
             height: 100%;
             align-items: flex-start;
             justify-content: flex-start;
@@ -111,8 +115,8 @@ export const Navegacao = styled.div`
 
 export const NavPerfil = styled.div`
     display: flex;
-    align-items: flex-start;
-    /* background-color: red; */
+    /* align-items: flex-start; */
+    /* background-color: green; */
 
     .notifi-carinho{
         position: absolute;
@@ -145,13 +149,13 @@ export const NavPerfil = styled.div`
     };
 
     button:nth-child(2) img{
-        width: 50px;
-        height: 50px;
+        width: 3.2rem;
+        height: 3.2rem;
     }
 
     button:nth-child(2):hover{
-        border: 2px solid var(--orange);
-        border-radius: 50px;
+        border: 1px solid var(--orange);
+        border-radius: 50%;
     }
 
     @media only screen and (max-width:425px){
@@ -205,21 +209,22 @@ export const DadosProduto = styled.section`
     margin-top: -50px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 3.2rem;
     padding:  0 60px;
 
     p.desc{
+        font-size: 1.4rem;
         color: var(--darkGrayishBlue);
     }
 
     .titulos-produto h1:first-child{
-        font-size: 14px;
+        font-size: 1.4rem;
         color: var(--orange);
         letter-spacing: 1px; 
         margin-bottom: 10px;
     }
     .titulos-produto h1{
-        font-size: 40px;
+        font-size: 4rem;
     }
 
     .dados-preco{
@@ -240,7 +245,7 @@ export const DadosProduto = styled.section`
 
     .conatiner-preco p{
         font-weight: 700;
-        font-size: 24px;
+        font-size: 2.4rem;
         color: var(--veryDarkBlue);
     }
     .conatiner-preco p:nth-child(2){
@@ -248,7 +253,7 @@ export const DadosProduto = styled.section`
         align-items: center;
         justify-content: center;
         font-weight: 700;
-        font-size: 14px;
+        font-size: 1.6rem;
         padding: 0 8px;
         border-radius: 10px;
         background-color: var(--paleOrange);
@@ -266,6 +271,10 @@ export const DadosProduto = styled.section`
     
     .interacao .menos-mais a{
         cursor: pointer;
+    }
+
+    .interacao p{
+        font-size: 1.4rem;
     }
 
     .interacao .menos-mais a:hover{
@@ -334,11 +343,11 @@ export const Slide = styled.aside`
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 4%;
+    padding-top: 2%;
     gap: 20px;
 
     img{
-        width: 80%;
+        width: 75%;
         height: auto;
         border-radius: 10px;
     } 
@@ -358,6 +367,7 @@ export const Slide = styled.aside`
 
     .selecao li{
         display: flex;
+        cursor: pointer;
         /* width: auto; */
         /* height: auto; */
     }
@@ -473,7 +483,7 @@ export const Carinho = styled.div`
     }
 
     .cabeca h1{
-        font-size: 16px;
+        font-size: 2rem;
     }
 
     .vazio{
@@ -515,9 +525,11 @@ export const Carinho = styled.div`
     .produto img.delete{
         width: 18px;
         height: 20px;
+        cursor: pointer;
     }
 
     .produto p{
+        font-size: 1.4rem;
         color: var(--darkGrayishBlue);
     }
 
